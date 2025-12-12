@@ -1,0 +1,28 @@
+GET http://localhost:3000/games
+
+###
+GET http://localhost:3000/games/1
+###
+POST http://localhost:3000/games
+Content-Type: application/json
+
+{
+  "Name": "New Game",
+  "Genre": "Adventure",
+  "Price": 49.99,
+  "ReleaseDate": "2024-07-15"
+}
+
+###
+PUT http://localhost:3000/games/7
+Content-Type: application/json
+
+{
+  "Name": "Updated Game",
+  "Genre": "Updated GENNRE",
+  "Price": 50.99,
+  "ReleaseDate": "2025-07-15"
+}
+
+###
+DELETE http://localhost:3000/games/9
